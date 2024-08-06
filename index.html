@@ -17,41 +17,30 @@
         <div class="banner">
             <div class="dark-overlay"></div>
             <div class="top">
-                <div class="brand">
-                    <div class="brand_logo">
-                        <a href="#">
-                            <img src="./images/Vint-age-logo.png" alt="Vint-age logo">
-                        </a>
+                <div class="top-bar">
+                    <div class="brand">
+                        <div class="brand_logo">
+                            <a href="#"><img src="./images/Vint-age-logo.png" alt="Vint-age logo"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="navbar menu-container">
-                    <input type="checkbox" name="" id="menu-toggle">
-                    <label for="menu-toggle"><i class="fas fa-bars"></i></label>
-                    <nav>
-                        <ul>
-                            <li class="active">
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#services">Services</a>
-                            </li>
-                            <li>
-                                <a href="#branches">Branches</a>
-                            </li>
-                            <li>
-                                <a href="#about">About</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                            <li>
-                                <a href="#team">Team</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="tourbtn">
-                    <a href="#">Take a tour</a>
+                    <div class="navbar menu-container">
+                        <input type="checkbox" name="" id="menu-toggle">
+                        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+                        <!-- <label for="menu-toggle"><i class="fas fa-bars"></i></label> -->
+                        <nav class="navbar">
+                            <ul>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#branches">Branches</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#team">Team</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tourbtn">
+                        <a href="#">Take a tour</a>
+                    </div>
                 </div>
             </div>
 

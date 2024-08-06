@@ -214,6 +214,38 @@
 }
 
 @media (max-width: 768px) {
+    .menu-container {
+        order: 2;
+    }
+
+    .top-bar .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        z-index: 3;
+        padding-bottom: 10px;
+    }
+
+    .top-bar .navbar ul li {
+        width: 100%;
+        text-align: left;
+        margin: 2px 0;
+    }
+
+    .top-bar .navbar ul li a {
+        display: block;
+        padding: 5px 0 0 20px;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
     .banner .top {
         padding: 25px 25px;
     }
@@ -457,72 +489,37 @@
 }
 
 @media (max-width: 425px) {
-    /* .banner .top {
-        padding: 25px 25px;
-    }
-
-    .banner .top img {
-        width: 80px;
-    }
-
-    .banner .top a {
-        font-size: 17px;
-    } */
-
-    /* ================================== */
 
     .menu-container {
         order: 2;
     }
-    
-    .navbar ul {
-        display: none !important;
-    }
-    
-    .navbar label {
-        display: block;
-        cursor: pointer;
-        color: var(--text_color_1);
-        font-size: 30px;
-        padding: 10px;
-    }
-    
-    .banner .top .navbar a {
-        font-size: 16px;
-    }
-    
-    .navbar input[type="checkbox"]:checked ~ nav ul {
-        display: block !important;
+
+    .top-bar .navbar ul {
+        flex-direction: column;
         position: absolute;
-        top: 80px;
-        left: 0px;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        z-index: 3;
+        padding-bottom: 10px;
+    }
+
+    .top-bar .navbar ul li {
         width: 100%;
         text-align: left;
-        font-weight: bold;
-        z-index: 500;
-        padding: 10px 0;
+        margin: 2px 0;
     }
-    
-    .navbar ul li {
+
+    .top-bar .navbar ul li a {
         display: block;
-        margin: 10px 0;
-        text-align: left !important;
-        position: relative;
-        
+        padding: 5px 0 0 20px;
+        font-size: 20px;
     }
-    
-    .navbar ul li a {
-        color: var(--text_color_1); /* Set text color for links */
-        text-decoration: none; /* Remove underline */
-        padding: 10px 15px; /* Add padding for better click area */
+
+    .hamburger {
         display: block;
-        
-    }
-    
-    .navbar ul li a:hover {
-        background-color: var(--primary_color); /* Add hover effect */
-        color: #fff !important; /* Change text color on hover */
-        font-weight: bold;
     }
 
     /* =================================== */
@@ -546,7 +543,7 @@
     }
 
     .banner_body h2 {
-       margin: 50px 100px; 
+       margin: 140px 100px; 
         font-size: 30px;
     }
 
@@ -557,7 +554,7 @@
     .banner_body p {
         width: 375px !important;
         padding: 0 0px 0 0px;
-        margin-top: 20px;
+        margin-top: 70px;
         font-size: 17px;
     }
 
@@ -858,58 +855,37 @@
 }
 
 @media (max-width: 375px) {
+    
     .menu-container {
         order: 2;
     }
-    
-    .navbar ul {
-        display: none !important;
-    }
-    
-    .navbar label {
-        display: block;
-        cursor: pointer;
-        color: var(--text_color_1);
-        font-size: 30px;
-        padding: 10px;
-    }
-    
-    .banner .top .navbar a {
-        font-size: 16px;
-    }
-    
-    .navbar input[type="checkbox"]:checked ~ nav ul {
-        display: block !important;
+
+    .top-bar .navbar ul {
+        flex-direction: column;
         position: absolute;
-        top: 80px;
-        left: 0px;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        z-index: 3;
+        padding-bottom: 10px;
+    }
+
+    .top-bar .navbar ul li {
         width: 100%;
         text-align: left;
-        font-weight: bold;
-        z-index: 500;
-        padding: 10px 0;
+        margin: 2px 0;
     }
-    
-    .navbar ul li {
+
+    .top-bar .navbar ul li a {
         display: block;
-        margin: 10px 0;
-        text-align: left !important;
-        position: relative;
-        
+        padding: 5px 0 0 20px;
+        font-size: 17px;
     }
-    
-    .navbar ul li a {
-        color: var(--text_color_1); /* Set text color for links */
-        text-decoration: none; /* Remove underline */
-        padding: 10px 15px; /* Add padding for better click area */
+
+    .hamburger {
         display: block;
-        
-    }
-    
-    .navbar ul li a:hover {
-        background-color: var(--primary_color); /* Add hover effect */
-        color: #fff !important; /* Change text color on hover */
-        font-weight: bold;
     }
 
     /* =================================== */
@@ -933,8 +909,8 @@
     }
 
     .banner_body h2 {
-       margin: 80px 100px; 
-        font-size: 30px;
+       margin: 120px 100px; 
+        font-size: 25px;
     }
 
     .banner_body .left h2 .vin {
@@ -944,7 +920,7 @@
     .banner_body p {
         width: 325px !important;
         padding: 0 25px 0 25px;
-        margin-top: 20px;
+        margin-top: 60px;
         font-size: 15px;
     }
 
@@ -1249,55 +1225,33 @@
     .menu-container {
         order: 2;
     }
-    
-    .navbar ul {
-        display: none !important;
-    }
-    
-    .navbar label {
-        display: block;
-        cursor: pointer;
-        color: var(--text_color_1);
-        font-size: 30px;
-        padding: 10px;
-    }
-    
-    .banner .top .navbar a {
-        font-size: 16px;
-    }
-    
-    .navbar input[type="checkbox"]:checked ~ nav ul {
-        display: block !important;
+
+    .top-bar .navbar ul {
+        flex-direction: column;
         position: absolute;
-        top: 80px;
-        left: 0px;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        z-index: 3;
+        padding-bottom: 10px;
+    }
+
+    .top-bar .navbar ul li {
         width: 100%;
         text-align: left;
-        font-weight: bold;
-        z-index: 500;
-        padding: 10px 0;
+        margin: 2px 0;
     }
-    
-    .navbar ul li {
+
+    .top-bar .navbar ul li a {
         display: block;
-        margin: 10px 0;
-        text-align: left !important;
-        position: relative;
-        
+        padding: 5px 0 0 20px;
+        font-size: 15px;
     }
-    
-    .navbar ul li a {
-        color: var(--text_color_1); /* Set text color for links */
-        text-decoration: none; /* Remove underline */
-        padding: 10px 15px; /* Add padding for better click area */
+
+    .hamburger {
         display: block;
-        
-    }
-    
-    .navbar ul li a:hover {
-        background-color: var(--primary_color); /* Add hover effect */
-        color: #fff !important; /* Change text color on hover */
-        font-weight: bold;
     }
 
     /* =================================== */
@@ -1321,8 +1275,8 @@
     }
 
     .banner_body h2 {
-       margin: 80px 60px; 
-        font-size: 30px;
+       margin: 120px 80px; 
+        font-size: 25px;
     }
 
     .banner_body .left h2 .vin {
@@ -1332,7 +1286,7 @@
     .banner_body p {
         width: 270px !important;
         padding: 0 25px 0 25px;
-        margin-top: 20px;
+        margin-top: 60px;
         font-size: 15px;
     }
 

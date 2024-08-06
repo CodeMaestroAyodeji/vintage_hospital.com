@@ -22,3 +22,9 @@ function scrollToTop() {
 
 // Attach the scrollToTop function to the button click event
 mybutton.addEventListener('click', scrollToTop);
+
+function toggleMenu() {
+    const navbar = document.querySelector('.top-bar .navbar ul');
+    navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
+}
+
