@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vintage Hospital | Home</title>
+
+        <!-- Website Title -->
+        <title>Vintage Hospital</title>
 
         <!-- Link to Main Styles -->
          <link rel="stylesheet" href="./css/style.css">
@@ -14,32 +16,44 @@
           <link rel="stylesheet" href="./icons/css/all.css">
     </head>
     <body>
+
+        <!-- ============ HERO SECTION ============= -->
+        <!--========================================= -->
+        <!--========================================= -->
         <div class="banner">
+
+            <!-- Setting the hero overlay -->
             <div class="dark-overlay"></div>
+            
+            <!-- Header and Navigation -->
             <div class="top">
                 <div class="top-bar">
+
+                    <!-- Brand logo -->
                     <div class="brand">
                         <div class="brand_logo">
-                            <a href="#"><img src="./images/Vint-age-logo.png" alt="Vint-age logo"></a>
+                            <a href="index.html"><img src="./images/Vint-age-logo.png" alt="Vint-age logo"></a>
                         </div>
                     </div>
+
+                    <!-- Main Navigation -->
                     <div class="navbar menu-container">
+
+                        <!-- Mobile responsive settings -->
                         <input type="checkbox" name="" id="menu-toggle">
                         <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-                        <!-- <label for="menu-toggle"><i class="fas fa-bars"></i></label> -->
+                        
+                        <!-- Navbar with links -->
                         <nav class="navbar">
                             <ul>
                                 <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#branches">Branches</a></li>
                                 <li><a href="#about">About</a></li>
+                                <li><a href="#branches">Branches</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#awards">Awards</a></li>
                                 <li><a href="#contact">Contact</a></li>
-                                <li><a href="#team">Team</a></li>
                             </ul>
                         </nav>
-                    </div>
-                    <div class="tourbtn">
-                        <a href="#">Take a tour</a>
                     </div>
                 </div>
             </div>
@@ -51,31 +65,42 @@
                     </h2>
                 </div>
                 <div class="right">
-                    <p>
-                        The reason for our success is no secret. 
-                        It comes down to one single principle that transcends time and geography, religion and culture. 
-                        It’s the Golden Rule – the simple idea that if you treat people well, 
-                        the way you would like to be treated, they will do the same. 
-                    </p>
-                    <p class="quoter">Isadore Sharpe</p>
+                    <blockquote>
+                        <cite>
+                            The reason for our success is no secret. 
+                            It comes down to one single principle that transcends time and geography, religion and culture. 
+                            It’s the Golden Rule – the simple idea that if you treat people well, 
+                            the way you would like to be treated, they will do the same. 
+                        </cite>
+                        <p class="quoter"><i>Isadore Sharpe</i></p>
+                    </blockquote>
                 </div>
             </div>
         </div>
 
+        <!-- ============ ABOUT SECTION ============= -->
+        <!--========================================= -->
+        <!--========================================= -->
         <div id="about" class="our_story">
-            <h2 class="title"> Our <span>Story</span> </h2>
             
+            <!-- Title -->
+            <h2 class="title">Our <span>Story</span></h2>
+            
+            <!-- Image box and their contents -->
             <div class="story_box">
+
+                <!-- Left box -->
                 <div class="left_story story_container">
                     <div class="image_1 about_img">
-                        <!-- <img src="./images/vintage1 1.png" alt=""> -->
                     </div>
-                    <div class="story_section_1">
+                    <div class="story_section_1 story_content_container">
                         <h3>Passionate</h3>
                         <p>Our concepts are crafted by passion in every single detail, designing lasting moments.</p>
                     </div>
                     <div class="image_2 about_img"></div>
                 </div>
+
+                <!-- Middle box -->
                 <div class="middle_story story_container">
                     <div class="story_section_2">
                         <h3>Distinct</h3>
@@ -83,20 +108,22 @@
                     </div>
                     <div class="image_3 about_img"></div>
                 </div>
+
+                <!-- Right box -->
                 <div class="right_story story_container">
                     <div class="image_4 about_img"></div>
-                    <div class="story_section_1">
+                    <div class="story_section_1 story_content_container">
                         <h3>World class</h3>
                         <p>Our collection consists of award - winning restaurants situated in premium dining destinations.</p>
                     </div>
                     <div class="image_5 about_img"></div>
                 </div>
             </div>
-            <div class="more_section">
-                <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
-            </div>
         </div>
 
+        <!-- ============ BRANCHES SECTION ============= -->
+        <!--========================================= -->
+        <!--========================================= -->
         <div id="branches" class="branches">
             
             <h2 class="title">Our <span>Collection</span></h2>
@@ -104,14 +131,18 @@
             <div class="collections">
                 <div class="collections_container">
                     <div class="branches_col branch_bg branch_1">
+                        
+                        <!-- Overlay  -->
                         <div class="dark-overlay"></div>
+
+                        <!-- Branches Content -->
                         <div class="caption">
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <h2 class="caption-title">London</h2>
+                                <h2 class="caption-title">Lagos</h2>
                             </a>
                             
                             <p class="caption_desc">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia at sint hic quod ut illo eum sit optio corporis dignissimos.
+                                Experience luxurious hospitality at our Lagos branch, featuring stylish suites, modern amenities, and exceptional service for both quick getaways and extended stays in the city.
                             </p>
                         </div>
                     </div>
@@ -119,10 +150,10 @@
                         <div class="dark-overlay"></div>
                         <div class="caption">
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <h2 class="caption-title">Dubai</h2>
+                                <h2 class="caption-title">Calabar</h2>
                             </a>
                             <p class="caption_desc">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia at sint hic quod ut illo eum sit optio corporis dignissimos.
+                                At our Calabar branch, guests can enjoy a relaxing environment surrounded by natural beauty. Whether you’re visiting for leisure or business, we provide impeccable service and modern amenities.
                             </p>
                         </div>
                     </div>
@@ -130,10 +161,10 @@
                         <div class="dark-overlay"></div>
                         <div class="caption">
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <h2 class="caption-title">Paris</h2>
+                                <h2 class="caption-title">Ibadan</h2>
                             </a>
                             <p class="caption_desc">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia at sint hic quod ut illo eum sit optio corporis dignissimos.
+                                Our Ibadan branch delivers refined hospitality with spacious accommodations, fine dining, and a blend of modern amenities and cultural charm for a unique experience.
                             </p>
                         </div>
                     </div>
@@ -141,16 +172,13 @@
                         <div class="dark-overlay"></div>
                         <div class="caption">
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <h2 class="caption-title">New York</h2>
+                                <h2 class="caption-title">Abuja</h2>
                             </a>
                             <p class="caption_desc">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia at sint hic quod ut illo eum sit optio corporis dignissimos.
+                                Our Abuja branch offers a blend of luxury and comfort, catering to both business and leisure guests. Located in the city’s business hub, we provide a sophisticated stay with premium services.
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="more_section">
-                    <a href="#" target="_blank" rel="noopener noreferrer">View More</a>
                 </div>
             </div>
             <div class="back_lines">
@@ -158,6 +186,10 @@
                 <div class="bottom_line"></div>
             </div>
         </div>
+
+        <!-- ============ SERVICES SECTION ============= -->
+        <!--========================================= -->
+        <!--========================================= -->
 
         <div id="services" class="expert_section">
             <h2 class="title">Vintage <span>Hour</span></h2>
@@ -167,21 +199,17 @@
                 </div>
                 <div class="expert_right">
                     <h3>Areas of Expertise</h3>
-                    <p>Our concepts are representations of real culinary journeys from different parts of the world.
-                        In building our brands, we travel across countries, we study the roots,
+                    <p>Our concepts are representations of real culinary journeys from different parts of the nation.
+                        In building our brands, we travel across states, we study the roots,
                         we magnify the details, we immerse ourselves, and we tell a story.
                     </p>
-                    
                 </div>
-            </div>
-            
-            <div class="more_section" style="margin: -180px 0px 0px 1155px;">
-                <a href="#" target="_blank" rel="noopener noreferrer">What we do</a>
             </div>
         </div>
         
+        <!-- Diversity and Purpose -->
         <div id="" class="diversity">
-            <h2 class="div_title">
+            <h2 class="title">
                 Our diversity fuels <span>our purpose</span>
             </h2>
 
@@ -225,22 +253,13 @@
                             <img src="./images/service2 1.png" alt="">
                         </div>
                     </div>
-                    
-                </div>
-
-                
-               
+                </div>               
             </div>
             
             <div class="back_lines">
                 <div class="top_line"></div>
                 <div class="bottom_line"></div>
             </div>
-
-            <div class="more_section work_us">
-                <a href="#" target="_blank" rel="noopener noreferrer">Work with us</a>
-            </div>
-
         </div>
 
         <div id="awards" class="awards">
@@ -262,6 +281,9 @@
             </div>
         </div>
 
+        <!-- ============ CONTACT SECTION ============= -->
+        <!--========================================= -->
+        <!--========================================= -->
         <div id="contact" class="contact">
             <h2 class="title">
                 Contact <span>Information</span>
@@ -276,26 +298,24 @@
                     <div class="block_2">
                         <div class="twin_block_1">
                             <h3 class="contact_title cap">
-                                London Office
+                                Lagos Office
                             </h3>
                             <p>
-                                15, Berkeley Street, <br>
-                                MayFair, <br>
-                                Paris <br>
-                                phn.no.: 9090909090 <br>
-                                mail.id: vintage@gmail.com
+                                250 Ocean Drive, Victoria Island, <br>
+                                Lagos <br>
+                                phn.no.: +2348093214321 <br>
+                                <span class="email">mail.id: lagos@prestigehospitality.com</span>
                             </p>
                         </div>
                         <div class="twin_block_1">
                             <h3 class="contact_title cap">
-                                NewYork Office
+                                Abuja Office
                             </h3>
                             <p>
-                                15, Berkeley Street, <br>
-                                MayFair, <br>
-                                Paris <br>
-                                phn.no.: 9090909090 <br>
-                                mail.id: vintage@gmail.com
+                                90 Diplomat Crescent, Maitama, <br>
+                                Abuja <br>
+                                phn.no.: +2348031234567 <br>
+                                <span class="email">mail.id: abuja@prestigehospitality.com</span>
                             </p>
                         </div>
                     </div>
@@ -303,29 +323,28 @@
                         <div class="twin_block_2 mini-block_1">
                             <div class="mini-block">
                                 <h3 class="contact_title cap">
-                                    Dubai Office
+                                    Ibadan Office
                                 </h3>
                                 <p>
-                                    15, Berkeley Street, <br>
-                                    MayFair, <br>
-                                    Paris <br>
-                                    phn.no.: 9090909090 <br>
-                                    mail.id: vintage@gmail.com
+                                    45 Heritage Avenue, Bodija, Ibadan, <br>
+                                    Oyo State <br>
+                                    phn.no.: +234 803 456 7890 <br>
+                                    <span class="email">mail.id:  ibadan@prestigehospitality.com</span>
                                 </p>
                             </div>
                             <div class="mini-block">
                                 <h3 class="contact_title cap">
-                                    Paris Office
+                                    Calabar Office
                                 </h3>
                                 <p>
-                                    15, Berkeley Street, <br>
-                                    MayFair, <br>
-                                    Paris <br>
-                                    phn.no.: 9090909090 <br>
-                                    mail.id: vintage@gmail.com
+                                    15 Paradise Street, Marian Road, <br>Calabar <br>
+                                    phn.no.: +2348056789123 <br>
+                                    <span class="email">mail.id: calabar@prestigehospitality.com</span>
                                 </p>
                             </div>
                         </div>
+
+                        <!-- Form container -->
                         <div class="twin_block_2 mini-block_2">
                             <h3 class="contact_title cap">
                                 Mail to us
@@ -347,12 +366,17 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ============ FOOTER SECTION ============= -->
+            <!--========================================= -->
+            <!--========================================= -->
             <div class="footer">
                 <p>2024 vintage hospitality Services. <span class="reser" >All rights reserved</span> <span><a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a></span></p>
-                <p>Designed by Group E</p>
+                <p>Designed by WAVE Student - Ikorodu Center (Group E)</p>
             </div>
         </div>
 
+        <!-- Scroll up settings -->
         <button id="scrollToTopBtn" title="Go to top">Top</button>
 
         <!-- Linkin to Scripts -->

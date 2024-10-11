@@ -1,4 +1,6 @@
-/* Color Variables */
+/* ============ COLOR VARIABLES ============= */
+/* ======================================== */
+/* ======================================== */
 :root {
     --text_color_1: #FFFFFF;
     --text-color_2: #000000;
@@ -8,14 +10,18 @@
     --overlay_color: rgba(0, 0, 0, 0.7);
 }
 
-html {
-    scroll-behavior: smooth;
-}
+/* ============ GLOBAL STYLES ============= */
+/* ======================================== */
+/* ======================================== */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -31,15 +37,15 @@ a:hover {
 }
 
 .title {
-    padding: 75px 0px 25px 100px;
-    font-size: 30px;
+    padding: 50px 0px 25px 100px;
+    font-size: 40px;
 }
 
 .title span {
     color: var(--primary_color);
 }
 
-.more_section {
+/* .more_section {
     margin: -10px 0 0 1172px;
     font-weight: bold;
 }
@@ -47,9 +53,13 @@ a:hover {
 .more_section a {
     text-decoration: none;
     border-bottom: var(--more-color) 3px solid;
-}
+} */
 
-/* Welcome Banner */
+/* ============ HERO SECTION ============= */
+/* ======================================== */
+/* ======================================== */
+
+/* === Welcome Banner ==*/
 .banner {
     position: relative;
     width: 100%;
@@ -62,6 +72,7 @@ a:hover {
     flex-direction: column;
 }
 
+/* === Dark Overlay ==*/
 .dark-overlay {
     position: absolute;
     top: 0;
@@ -72,60 +83,63 @@ a:hover {
     z-index: 1;
 }
 
-.banner .top {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
+/* === Header and Navigation ==*/
+/*.banner .top {
+    width: 100%;
     padding: 30px 100px 0 100px;
     position: relative;
-    /* z-index: 2; */
-}
+}*/
 
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    color: white;
-    position: relative;
-    z-index: 2;
-}
-
-.top-bar .navbar ul {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-}
-
-.top-bar .navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-.banner .top ul .active a {
-    color: var(--primary_color);
-}
-
-.banner .tourbtn a {
-    color: var(--primary_color) !important;
-}
-
-.banner .tourbtn a:hover {
-    color: #fff !important;
-}
-
-.banner .top ul li {
-    display: inline;
-}
-
+/*=== Mobile responsive icon settings ==*/
 .hamburger {
     display: none;
     font-size: 2em;
     cursor: pointer;
 }
 
+.menu-container label {
+    display: none;
+}
+
+.menu-container #menu-toggle {
+    display: none;
+}
+
+/*=== Main Navigation bar or container ==*/
+.top-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px 0 100px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+/*===== Navbar with links =========== */
+.top-bar .navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top-bar .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.banner .top ul .active a {
+    color: var(--primary_color);
+}
+
+/* .banner .top ul li {
+    display: inline;
+} */
+
+/*======Setting the content in the body section =========== */
 .banner_body {
     display: flex;
     justify-content: space-between;
@@ -136,6 +150,7 @@ a:hover {
     z-index: 1;
 }
 
+/* Left content  */
 .banner_body .left {
     width: 50%;
     padding: 120px 0 0 350px;
@@ -151,84 +166,27 @@ a:hover {
     color: var(--primary_color);
 }
 
+/* Right content */
 .banner_body .right {
     width: 50%;
-    padding: 180px 250px 0px 0px;
+    padding: 150px 250px 0px 0px;
     font-size: 21px;
 }
 
 .banner_body .right .quoter {
     color: var(--primary_color);
-    text-align: right;
+    text-align: right; 
 }
 
-.menu-container label {
-    display: none;
-}
+/* ============ ABOUT SECTION ============= */
+/* ======================================== */
+/* ======================================== */
 
-.menu-container #menu-toggle {
-    display: none;
-}
-
-/* Vintage Hour */
-.expert_section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url(../images/expertise_bkgd.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.expert_section .expert_title {
-    padding: 80px 0 20px 100px;
-}
-
-.expert_section .expert_body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.expert_section .expert_body .expert_left {
-    width: 50%;
-    padding: 0px 0 0px 100px;
-}
-
-.expert_section .expert_body .expert_right {
-    width: 50%;
-    padding: 0px 0px 120px 100px;
-    margin-right: 100px;
-    font-size: 15.2px;
-    font-weight: bold;
-}
-
-.expert_section .expert_body .expert_right h3 {
-    font-size: 30px;
-    padding-bottom: 15px;
-}
-
-
-/* ===================== Our Story Section Starts Here =================== */
-
+/* About Container */
 .our_story {
     width: 100%;
-    height: 110vh;
     display: flex;
     flex-direction: column;
-}
-
-.our_story h2 {
-    padding: 50px 0 0 100px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.our_story h2 span {
-    color: var(--primary_color);
 }
 
 .our_story .story_box {
@@ -236,7 +194,7 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 100px 50px 100px;
+    padding: 25px 100px 25px 100px;
 }
 
 .our_story .story_container {
@@ -244,6 +202,7 @@ a:hover {
     height: 500px;
 }
 
+/*Setting all the image boxes within the container*/
 .our_story .story_container .image_1 {
     width: 100%;
     height: 230px;
@@ -261,7 +220,7 @@ a:hover {
 
 .our_story .story_container .image_2 {
     width: 100%;
-    height: 165px;
+    height: 200px;
 }
 
 .our_story .story_container .story_section_2 {
@@ -271,40 +230,50 @@ a:hover {
 
 .our_story .story_container .image_3 {
     width: 100%;
-    height: 380px;
+    height: 438px;
 }
 
 .our_story .story_container .image_5 {
     width: 100%;
-    height: 165px;
+    height: 200px;
 }
+
+/* About content container */
+.story_content_container {
+    margin-bottom: 20px;
+}
+
+
+/* Setting all the Sub-heading titles */
 
 .our_story .story_section_1 h3, .story_section_2 h3 {
     color: var(--primary_color);
-    padding: 15px 0 5px 0;
-    font-size: 17px;
+    padding: 15px 0 0px 0;
+    font-size: 25px;
 }
 
 .our_story .story_section_2 h3 {
     text-align: center;
+    padding-top: 0;
     padding-bottom: 5px;
 }
 
+/* Setting all the contents under the sub-headings */
 .our_story .story_section_1 p {
     color: var(--text-color_2);
-    font-size: 15px;
+    font-size: 17px;
     padding: 0px 90px 0 0;
 }
-
 
 .our_story .story_section_2 p {
     text-align: center;
     color: var(--text-color_2);
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
-    padding: 0px 70px 0 70px;
+    padding: 0px 10px 0 10px;
 }
 
+/* Setting the background images in all the boxes */
 .our_story .about_img {
     background-position: center;
     background-size: cover;
@@ -331,14 +300,21 @@ a:hover {
     background-image: url('../images/vintage6\ 1.png');
 }
 
-/* ======== Our Story Section Ends Here ========== */
+
+
+/* ============ BRANCHES SECTION ============= */
+/* ======================================== */
+/* ======================================== */
+
 
 /* ===== Our Collectiions Starts Here ========*/
 .branches {
     width: 100%;
-    height: 100vh;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
+/* Setting up the branches images as background */
 .branches .branch_bg {
     background-position: center;
     background-repeat: no-repeat;
@@ -361,6 +337,7 @@ a:hover {
     background-image: url('../images/hotel5\ 1.png');
 }
 
+/* Section background lines setting */
 .back_lines {
     display: flex;
     flex-direction: column;
@@ -388,12 +365,14 @@ a:hover {
     flex-direction: column;
 }
 
+/* Images container for barnches */
 .branches .collections .collections_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0px 100px 50px 100px;
+    padding-top: 25px;
     gap: 50px;
     position: relative;
 }
@@ -405,16 +384,18 @@ a:hover {
     z-index: 20;
 }
 
+/* Dark Overlay */
 .branches .collections .collections_container .branches_col .dark-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 2;
 }
 
+/* Branches Contents */
 .caption {
     display: flex;
     flex-direction: column;
@@ -425,10 +406,10 @@ a:hover {
 }
 
 .caption a {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-bottom: var(--more-color) 3px solid;
     max-width: 77px;
-    font-size: 12px !important;
+    font-size: 18px !important;
     color: var(--text_color_1);
 }
 
@@ -438,32 +419,69 @@ a:hover {
 
 
 
-/* ======= Our Collectiions Ends Here ========== */
+/* ============ SERVICES SECTION ============= */
+/* ======================================== */
+/* ======================================== */
+
+/* Vintage Hour  main container*/
+.expert_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/expertise_bkgd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.expert_section .expert_body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.expert_section .expert_body .expert_left {
+    width: 50%;
+    padding: 0px 0 0px 100px;
+}
+
+.expert_section .expert_body .expert_right {
+    width: 50%;
+    padding: 0px 0px 120px 100px;
+    margin-right: 100px;
+    font-size: 15.2px;
+    font-weight: bold;
+}
+
+.expert_section .expert_body .expert_right h3 {
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.expert_section .expert_body .expert_right p {
+    font-size: 18px;
+}
+
 
 /* Diversity Section starts here */
 .diversity {
     width: 100%;
-    height: 100vh;
+    padding-bottom: 100px;
 }
 
-.diversity h2 {
-    margin: 50px 0px 25px 100px;
-    font-size: 30px;
-}
-
-.diversity h2 span {
-    color: var(--primary_color);
-}
-
+/* Main Container */
 .diversity .service_container {
     width: calc(100% - 200px);
     height: 470px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 100px 0px 100px;
+    margin: 25px 100px 0px 100px;
 }
 
+/* Left column */
 .service_container .column__1 {
     width: 29%;
     height: 470px;
@@ -503,11 +521,13 @@ a:hover {
     height: 100%;
 }
 
+/* Middle column */
 .service_container .column__2 {
     width: 24%;
     height: 470px;
 }
 
+/* Right column */
 .service_container .column__3 {
     width: 44%;
     height: 470px;
@@ -562,10 +582,6 @@ a:hover {
 .service_container img {
     width: 100%;
     height: 100%;
-}
-
-.work_us {
-    margin: 25px 0 0 1155px;
 }
 
 .diversity .top_line {
@@ -625,7 +641,11 @@ a:hover {
     height: 250px;
 }
 
-/* ======== Awards and Achievements Ends Here */
+
+
+/* ============ CONTACT SECTION ============= */
+/* ======================================== */
+/* ======================================== */
 
 /* ======== Contact and Starts Here */
 .contact {
@@ -726,6 +746,7 @@ a:hover {
     font-size: 20px;
 }
 
+/* Styles for form */
 form input, textarea {
     border: none;
     border-bottom: 1px var(--text-color_2) solid;
@@ -788,7 +809,7 @@ form span {
     display: none;
     position: fixed;
     bottom: 20px; 
-    right: 30px;
+    right: 80px;
     z-index: 99;
     border: none;
     outline: none;
